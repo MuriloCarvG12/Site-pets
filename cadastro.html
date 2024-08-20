@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <header class="header-body">
+                <h2>Pagina pets</h2>
+                <nav>
+                    <ul class="nav-bar">
+                        <li>Pagina1</li>
+                        <li>Pagina2</li>
+                        <li>Pagina3</li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+
+    <div class="form-Container">
+
+        <div class="form-titulo">
+            <h1>Cadastro de Pet</h1>
+        </div>
+        
+        <form id="Form">
+            <div class="Form-row">
+                <div class="Form-Label">
+                    <label for="NomePet" class="Label">Nome</label>
+                    <input type="text" id="NomePet" placeholder="Nome do Pet">
+                    <span style="color: red;" id="mensagem-Nome"></span>
+                </div>
+
+                <div class="Form-Label">
+                    <label for="IdadePet" class="Label">Nome</label>
+                    <input type="number" id="IdadePet" placeholder="Idade do Pet">
+                    <span style="color: red;" id="mensagem-Idade"></span>
+                </div>
+            </div>
+
+            <div class="Form-Item">
+                <div class="label-BG">
+                <label  label for="CorPet" class="Label">Cor do Pet</label>
+                </div>
+                <div>
+                <input type="color" id="CorPet">
+                </div>
+                
+                
+            </div>
+            
+            
+            <div class="Form-Item">
+                <div class="label-BG">
+                <label for="DescricaoPet" class="Label">Descricao do Pet</label>
+                </div>
+                <textarea rows="5" id="DescricaoPet"></textarea>
+                <span style="color: red;" id="mensagem-Descricao"></span>
+            </div>
+                
+            
+
+            
+            <div class="Form-Item">
+                <div class="label-BG">
+                    <label for ="UrlFoto"> Url da Foto</label>
+                </div>
+                <input type="url" id="UrlFoto">
+                <span style="color: red;" id="mensagem-Url"></span>
+               
+            </div>
+            <div class="Form-Item">
+                <label>Tipo</label>
+                <select id="tipo">
+                    <option value="" class="option-bold">Selecione um opção</option>
+                    <option value="CACHORRO">Cachorro</option>
+                    <option value="GATO">Gato</option>
+                    <option value="PASSARO">Pássaros</option>
+                    <option value="DIVERSOS">Diversos</option>
+                </select>
+            </div>
+                
+            
+            <button  type="submit">Salvar</button>
+        </form>
+        </div>
+
+        <footer class="Footer-container">
+            <p>Todos direitos reservados a nada</p>
+        </footer>
+    </div>
+    
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
